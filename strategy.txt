@@ -1,0 +1,16 @@
+betray:
+	set free, +125 points
+	punished, -250 points
+	-62.5 points avg
+1.5
+
+collude:
+	released, 0 points
+	severe punishment, -500 points
+	-250 poinst avg
+2
+
+set free = 1
+punished = 2
+released = 1
+severe punishment = 3
