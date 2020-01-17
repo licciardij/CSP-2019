@@ -26,7 +26,23 @@ def move(my_history, their_history, my_score, their_score):
     # Analyze my_history and their_history and/or my_score and their_score.
     # Decide whether to return 'c' or 'b'.
     
-    return 'c'
+    # Analyze their_history to see if they collude 3 times more than betray
+    # in this case, we collude to change our history and make it unpredictable
+    # otherwise, we betray as there is no better option
+    
+    c_count = 0
+    b_count = 0
+    # count the amount of collude or betray
+    for choice in their_history:
+        if choice == 'c':
+            c_count += 1
+        else:
+            b_count += 1
+    
+    if c_count / 3 >= b_count:
+        return 'c'
+
+    return 'b'
 
     
 def test_move(my_history, their_history, my_score, their_score, result):
