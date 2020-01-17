@@ -10,6 +10,7 @@ team_name = 'Team 9' # Only 10 chars displayed.
 strategy_name = 'Collude unless betrayed, if somene betrays randomly decide'
 strategy_description = 'Collude unless betrayed, if somene betrays randomly decide'
     
+import random
 def move(my_history, their_history, my_score, their_score):
     ''' Arguments accepted: my_history, their_history are strings.
     my_score, their_score are ints.
@@ -26,9 +27,9 @@ def move(my_history, their_history, my_score, their_score):
     # Analyze my_history and their_history and/or my_score and their_score.
     # Decide whether to return 'c' or 'b'.
     
-     if 'b' in their_history:
+    if 'b' in their_history:
         return random.choice(['c', 'b'])
-     else:
+    else:
         return 'c'
 
     
