@@ -8,7 +8,7 @@
 
 team_name = 'Team 3' # Only 10 chars displayed.
 strategy_name = 'mem_cCBBB'
-strategy_description = 'retaliate'
+strategy_description = ''
     
 def move(my_history, their_history, my_score, their_score):
     if len(my_history) == 0:
